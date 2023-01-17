@@ -116,7 +116,7 @@ const deleteTodo = e => {
 }
 
 const enterKeyCheck = () => {
-    window.addEventListener('keydown',({keyCode}, e) => {
+    window.addEventListener('keydown',({keyCode}) => {
         switch (keyCode) {
             case 13:
                 addNewTodo();
