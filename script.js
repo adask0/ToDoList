@@ -119,11 +119,7 @@ const enterKeyCheck = () => {
     window.addEventListener('keydown',({keyCode}, e) => {
         switch (keyCode) {
             case 13:
-                if(e.target.matches('.edit')){
-                    editTodo(e);
-                }else {
-                    addNewTodo();
-                }
+                addNewTodo();
                 break;
         }
     })
